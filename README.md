@@ -9,7 +9,7 @@ To build, you can just run these shell commands:
     mkdir build
     cd build
     cmake -DCMAKE_BUILD_TYPE=Release ..
-    make &&sudo make install
+    make && sudo make install
 
 ## Developing with libuvc
 
