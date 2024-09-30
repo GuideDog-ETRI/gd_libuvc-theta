@@ -1,26 +1,15 @@
-`libuvc` is a cross-platform library for USB video devices, built atop `libusb`.
-It enables fine-grained control over USB video devices exporting the standard USB Video Class
-(UVC) interface, enabling developers to write drivers for previously unsupported devices,
-or just access UVC devices in a generic fashion.
+`gd_libuvc-theta` is a modified version of `libuvc` that includes support for Ricoh Theta cameras. `libuvc` is a cross-platform library for USB video devices, built atop `libusb`. It enables fine-grained control over USB video devices exporting the standard USB Video Class(UVC) interface, enabling developers to write drivers for previously unsupported devices, or just access UVC devices in a generic fashion.
 
-## Getting and Building libuvc
-
-Prerequisites: You will need `libusb` and [CMake](http://www.cmake.org/) installed.
+## Getting and Building gd_libuvc-theta
 
 To build, you can just run these shell commands:
 
-    git clone https://github.com/libuvc/libuvc
-    cd libuvc
+    git clone https://github.com/GuideDog-ETRI/gd_libuvc-theta.git
+    cd gd_libuvc-theta
     mkdir build
     cd build
-    cmake ..
-    make && sudo make install
-
-and you're set! If you want to change the build configuration, you can edit `CMakeCache.txt`
-in the build directory, or use a CMake GUI to make the desired changes.
-
-There is also `BUILD_EXAMPLE` and `BUILD_TEST` options to enable the compilation of `example` and `uvc_test` programs. To use them, replace the `cmake ..` command above with `cmake .. -DBUILD_TEST=ON -DBUILD_EXAMPLE=ON`.
-Then you can start them with `./example` and `./uvc_test` respectively. Note that you need OpenCV to build the later (for displaying image).
+    cmake -DCMAKE_BUILD_TYPE=Release ..
+    make &&sudo make install
 
 ## Developing with libuvc
 
