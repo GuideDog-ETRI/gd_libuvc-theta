@@ -57,6 +57,7 @@ if (NOT TARGET JPEG::JPEG)
   include(FindPackageHandleStandardArgs)
   find_package_handle_standard_args(JPEG
       REQUIRED_VARS IMPORTED_JPEG_LIBRARIES IMPORTED_JPEG_INCLUDE_DIRS
+      NAME_MISMATCHED
   )
 
   if(JPEG_FOUND)
