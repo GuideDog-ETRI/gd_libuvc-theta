@@ -2,7 +2,11 @@
 
 ## Getting and Building gd_libuvc-theta
 
-To build, you can just run these shell commands:
+1. Install libusb
+
+    sudo apt install libusb-1.0-0-dev
+    
+2. Build and install gd_libuvc-theta
 
     git clone https://github.com/GuideDog-ETRI/gd_libuvc-theta.git
     cd gd_libuvc-theta
