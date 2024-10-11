@@ -5,18 +5,18 @@
 1. Install libusb
 
 ```
-    sudo apt install libusb-1.0-0-dev
+sudo apt install libusb-1.0-0-dev
 ```
     
 2. Build and install gd_libuvc-theta
 
 ```
-    git clone https://github.com/GuideDog-ETRI/gd_libuvc-theta.git
-    cd gd_libuvc-theta
-    mkdir build
-    cd build
-    cmake -DCMAKE_BUILD_TYPE=Release ..
-    make && sudo make install
+git clone https://github.com/GuideDog-ETRI/gd_libuvc-theta.git
+cd gd_libuvc-theta
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make && sudo make install
 ```
 
 ## Developing with libuvc
